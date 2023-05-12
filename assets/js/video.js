@@ -1,3 +1,6 @@
+
+
+// controls
 var controls = [
     'play-large', // The large play button in the center
     'restart', // Restart playback
@@ -17,5 +20,9 @@ var controls = [
     'fullscreen' // Toggle fullscreen
   ];
   const player = new Plyr('.my-video', {
-    controls
+    controls,
+    fill: true,
+    // width: 98,
+    aspectRatio: '9:16',
+    responsive: true
   });

@@ -8,7 +8,11 @@
     .small-banner{
         display: none;
     }
-    .my-video{max-width: 91%;}
+    .plyr__poster{
+        display: block;
+        max-width: 1970px;
+    }
+    .my-video{max-width: 97%;}
     .movies-vid{margin-top: 47rem;}
 }
 /* #RESPONSIVE FOR 1200px */
@@ -254,10 +258,9 @@
         align-items: center;
         justify-content: center;
     }
-    #container.vid-js{
-        margin: auto;
+    /* #container.vid-js{
         min-width: 220px;
-    }
+    } */
     .uni-play ion-icon{
         position: fixed;
         width: 60px;

@@ -1,0 +1,50 @@
+[debug] [2023-05-12T22:56:53.896Z] ----------------------------------------------------------------------
+[debug] [2023-05-12T22:56:53.920Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-12T22:56:53.923Z] CLI Version:   12.0.0
+[debug] [2023-05-12T22:56:53.924Z] Platform:      win32
+[debug] [2023-05-12T22:56:53.925Z] Node Version:  v18.16.0
+[debug] [2023-05-12T22:56:54.034Z] Time:          Fri May 12 2023 23:56:53 GMT+0100 (West Africa Standard Time)
+[debug] [2023-05-12T22:56:54.036Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-12T22:56:54.735Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-12T22:56:54.739Z] > authorizing via signed-in user (emmanueldike275@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\backup\web\created web
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-12T22:57:43.490Z] Using project from CLI flag: pan-share
+[debug] [2023-05-12T22:57:43.589Z] > refreshing access token with scopes: []
+[debug] [2023-05-12T22:57:43.606Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-12T22:57:43.610Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-12T22:57:45.228Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-12T22:57:45.229Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-12T22:57:45.449Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pan-share [none]
+[debug] [2023-05-12T22:57:46.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pan-share 200
+[debug] [2023-05-12T22:57:46.071Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pan-share {"projectId":"pan-share","projectNumber":"1006521232437","displayName":"pan-share","name":"projects/pan-share","resources":{"hostingSite":"pan-share"},"state":"ACTIVE","etag":"1_157ac70b-cbae-4962-9c07-a0aea1b46e91"}
+[info] i  Using project pan-share (pan-share) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
