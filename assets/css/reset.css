@@ -1,0 +1,72 @@
+/* Remove default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+/* more-intuitive box-sizing model. */
+*, *::before, *::after{ box-sizing: border-box; }
+
+/* Default font-family */
+html{
+    font-family: var(--ff-inter);
+}
+
+/* All heading Color */
+h1,h2,h3,h4,h5,h6{
+    color: var(--white);
+}
+
+/* Add default background & color,
+Improve text rendering */
+body{
+    background: var(--rich-black-fogra-29);
+    color: var(--off-white);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Change image default */
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+/* Remove form default */
+input, .button, select{
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Add button default */
+.button{
+    color: var(--off-white);
+    cursor: pointer;
+}
+
+/* Remove list item */
+li{ list-style-type: none; }
+
+/* Change link default */
+a{
+    text-decoration: none;
+    display: block;
+    color: var(--off-white);
+}
+
+/* Change default scrollbar style */
+::-webkit-scrollbar{
+    background: transparent;
+    border-left: 1px solid var(--oxford-blue);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--light-azure);
+    border-radius: 5em;
+    border: 3px solid var(--rich-black-fogra-29);
+}
