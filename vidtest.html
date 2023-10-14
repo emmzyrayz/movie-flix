@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include Plyr.js CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
+</head>
+<body>
+  <video id="yourVideoElementId" controls>
+    <source src="" type="video/mp4">
+</video>
+
+<button id="playButtonId">Play</button>
+<script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+<script>
+    const video = document.getElementById("yourVideoElementId");
+    const playButton = document.getElementById("playButtonId");
+
+    // Initialize Plyr.js
+    const player = new Plyr(video);
+    const deUrl = 'https://gredirect.info/download.php?url=aHR0cHM6LyURASDGHUSRFSJGYfdsffsderFStewthsfSFtrfteAdrefsdsdfwerFrefdsfrersfdsrfer36343534sdf9rdGk4bzh4ODV3LmU2Mjc4ZC5jb20vdXNlcjEzNDIvOGQ1YTRiYjRkZmQ4MzU3ZjI2MjRhM2FkMjEwMzViODUvRVAuNy52MC4xNjkyMDM4NDIyLjQ4MHAubXA0P3Rva2VuPTFIQ1RrakwtOVZ1RlhIQkZ4WGROdUEmZXhwaXJlcz0xNjk3MTYzNTQ3JmlkPTIxMDA0Mg==';
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
+    // Preload the first 20 seconds
+    fetch( proxyUrl + deUrl, { headers: { Range: "bytes=0-4194304" } })
+        .then(response => response.blob())
+        .then(data => {
+            const objectURL = URL.createObjectURL(data);
+            video.src = objectURL;
+
+            // When the video is loaded, update Plyr.js and play on button click
+            video.addEventListener("canplay", function() {
+                playButton.addEventListener("click", function() {
+                    player.play();
+                });
+            });
+        });
+</script>
+</body>
+</html>
