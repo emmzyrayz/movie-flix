@@ -48,3 +48,36 @@ Before we get started, keep in mind:
 [info] will contain Hosting assets to be uploaded with firebase deploy. If you
 [info] have a build process for your assets, use your build's output directory.
 [info] 
+[debug] [2023-10-14T10:09:28.624Z] ----------------------------------------------------------------------
+[debug] [2023-10-14T10:09:28.645Z] Command:       /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/firebase init
+[debug] [2023-10-14T10:09:28.651Z] CLI Version:   12.7.0
+[debug] [2023-10-14T10:09:28.656Z] Platform:      android
+[debug] [2023-10-14T10:09:28.659Z] Node Version:  v18.16.1
+[debug] [2023-10-14T10:09:28.663Z] Time:          Sat Oct 14 2023 11:09:28 GMT+0100 (West Africa Standard Time)
+[debug] [2023-10-14T10:09:28.665Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-14T10:09:28.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-14T10:09:28.745Z] > authorizing via signed-in user (emmanueldike275@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /storage/emulated/0/Download/home/temp/working-project/github-projects/movie-flix
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-10-14T10:09:42.108Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100

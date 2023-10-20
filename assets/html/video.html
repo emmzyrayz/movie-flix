@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video js</title>
+    <!-- Docs styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css"
+    />
+    <!--  custom css  -->
+    <link rel="stylesheet" href="/assets/css/video.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/panflix single.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/media_query.css" />
+    <!-- google font link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- #header section -->
+      <header class="">
+        <div class="navbar">
+          <!-- #menu button for small screen -->
+          <div class="button navbar-menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </div>
+          <!-- !menu button for small screen -->
+
+          <a href="/" class="navbar-brand">
+            <h2>Pan<span>Flix</span></h2>
+          </a>
+
+          <!-- #navbar navigation -->
+          <nav class="">
+            <ul class="navbar-nav">
+              <li><a href="#" class="navbar-link">Home</a></li>
+              <li><a href="#category" class="navbar-link">Category</a></li>
+              <li><a href="#live" class="navbar-link">LIVE</a></li>
+            </ul>
+          </nav>
+          <!-- !navbar navigation -->
+
+          <!-- #Search and sign-in -->
+          <div class="navbar-actions">
+            <form action="#" class="navbar-form">
+              <input
+                type="text"
+                name="search"
+                id="myInput"
+                onkeyup="myFunction()"
+                placeholder="I'm looking for..."
+                class="navbar-form-search"
+              />
+
+              <div class="button navbar-form-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+
+              <div class="button navbar-form-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </div>
+            </form>
+
+            <!-- search button for small screen -->
+
+            <div class="button navbar-search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+
+            <a href="#" class="navbar-signin">
+              <span>Sign in</span>
+              <ion-icon name="log-in-outline"></ion-icon>
+            </a>
+          </div>
+          <!-- !Search and sign-in -->
+        </div>
+      </header>
+      <!-- !header section -->
+      <!-- #main -->
+      <main>
+        <!--#Add a Simple HTML5 Video tag-->
+        <div id="video-container" class="video-js">
+          <video id="my-video" class="video-player" controls 
+          data-poster="https://fugcd253xdlnfp22.lions-vidcdn.com/hls2/01/00561/xc8hyw8yun2u_n/index-v1-a1.m3u8?t=pa8G9BLmFNFkXXNy1yeAN6PwSuaM-KOKlTeP-0R2yj0&s=1697756420&e=129600&f=2809581&srv=a1W8S79DkDkQ&i=0.4&sp=1500&p1=a1W8S79DkDkQ&p2=a1W8S79DkDkQ&asn=29465">
+              <h3 class="video-name-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero.</h3>
+              <source src="https://s14.upstreamcdn.co/hls2/01/04863/drkzjipqw08n_n/index-v1-a1.m3u8?t=ZkY-RsyVpj6csuePVjuu-HRyZusBLgjOP_fG2JdNDrE&s=1697555034&e=10800&f=24317700&i=0.0&sp=0" type="video/mp4">
+  
+              <!-- #Caption files -->
+              <track
+                kind="captions"
+                label="English"
+                srclang="en"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                default
+              />
+              <track
+                kind="captions"
+                label="Français"
+                srclang="fr"
+                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt"
+              />
+              <!-- !Caption files -->
+          </video>
+      </div>
+        <!--!Add a Simple HTML5 Video tag-->
+        <section class="movies-vid movies">          <h2 class="section-heading">
+          related movies
+          <hr class="hr-line" />
+        </h2>
+
+          <!-- #MOVIES GRID -->
+          <div class="movies-grid">
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy" src="/assets/images/1_halo4.jpg" alt="" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Red Notice</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/call-of-duty-ghosts-01-guide4games.net-.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <div class="play">
+                    <a href="#">
+                      <ion-icon name="play-circle-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">COD ghost</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/watch_dogs2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Watch Dogs - 2</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy" src="/assets/images/2_halo4.jpg" alt="" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">HALO</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/nfs-rivas-01-guide4games.com-.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">NFS - most wanted</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/watch_dogs3.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Watch Dogs - 2</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy" src="/assets/images/3_halo4.jpg" alt="" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">HALO - 3</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/call-of-duty-ghosts-06-guide4games.net-.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">COD ghost recon</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/watch_dogs2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Watch Dogs - 2</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy" src="/assets/images/1_halo4.jpg" alt="" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Red Notice</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/call-of-duty-ghosts-01-guide4games.net-.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">COD ghost</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/watch_dogs2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Watch Dogs - 2</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy" src="/assets/images/1_halo4.jpg" alt="" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Red Notice</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/call-of-duty-ghosts-01-guide4games.net-.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">COD ghost</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/watch_dogs2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Watch Dogs - 2</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy" src="/assets/images/1_halo4.jpg" alt="" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Red Notice</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/call-of-duty-ghosts-01-guide4games.net-.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">COD ghost</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img loading="lazy"
+                  src="/assets/images/watch_dogs2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>6.4</span>
+                  </div>
+
+                  <a href="/assets/html/movie.html"
+                    ><div class="play">
+                      <ion-icon name="play-circle-outline"></ion-icon></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Watch Dogs - 2</h3>
+                <div class="card-info">
+                  <span class="genre">Action/Comedy</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- !MOVIES GRID -->
+        </section>
+      </main>
+      <!-- !main -->
+
+      <!-- #FOOTER SECTION -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2 class="footer-logo">Pan<span>Flix</span></h2>
+            <p class="slogan">
+              Movies & Tv shows, Online cinem, Movie database HTML Template.
+            </p>
+
+            <div class="social-link">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <ul>
+              <h4 class="link-heading">Pan<span>Flix</span></h4>
+              <li class="link-item"><a href="#">About us</a></li>
+              <li class="link-item"><a href="#">My profile</a></li>
+              <li class="link-item"><a href="#">Pricing plans</a></li>
+              <li class="link-item"><a href="#">Contacts</a></li>
+            </ul>
+            <ul>
+              <h4 class="link-heading">Browse</h4>
+
+              <li class="link-item"><a href="#">Live Tv</a></li>
+              <li class="link-item"><a href="#">Live News</a></li>
+              <li class="link-item"><a href="#">Live Sport</a></li>
+              <li class="link-item"><a href="#">Streaming Library</a></li>
+            </ul>
+
+            <ul>
+              <li class="link-item"><a href="#">Tv Shows</a></li>
+              <li class="link-item"><a href="#">Movies</a></li>
+              <li class="link-item"><a href="#">Kids</a></li>
+              <li class="link-item"><a href="#">Collections</a></li>
+            </ul>
+
+            <ul>
+              <h4 class="link-heading">Help</h4>
+              <li class="link-item"><a href="#">Account & Billing</a></li>
+              <li class="link-item"><a href="#">Plans & Pricing</a></li>
+              <li class="link-item"><a href="#">Supported devices</a></li>
+              <li class="link-item"><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="copyright">
+            <p>&copy; copyright 2022 PanFlix</p>
+          </div>
+          <div class="wrapper">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Condition</a>
+          </div>
+        </div>
+      </footer>
+      <!-- !FOOTER SECTION -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.2/plyr.min.js"></script>
+    <!--  custom js  -->
+    <script src="/assets/js/video.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
