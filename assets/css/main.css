@@ -48,6 +48,15 @@ nav {
   justify-content: center;
 }
 
+.video-js h2{
+  display: block;
+  margin: 2px;
+  padding: 5px 2px;
+  color: var(--light-azure);
+  font-weight: 700;
+}
+
+
 .section-heading {
   font-size: var(--section-heading);
   font-weight: var(--fw-5);
@@ -867,4 +876,31 @@ span.detail {
 .movie-seasons .seasons .episodes .ep:hover{
   background: var(--azure);
   color: var(--oxford-blue);
+}
+
+.video-js .video-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+  min-width: 100px;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-js .video-btn a{
+  font-size: 20px;
+  font-weight: 700;
+  border: solid 1px var(--light-azure);
+  border-radius: 10px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--light-azure);
+}
+
+.video-js .video-btn a:hover{
+  background: var(--light-azure);
+  border: solid 1px rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
 }

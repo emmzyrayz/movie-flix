@@ -12,11 +12,14 @@
     display: block;
     max-width: 1970px;
   }
+  .video-js{
+    margin-top: 110px;
+  }
   .my-video {
     max-width: 100%;
   }
   .movies-vid {
-    margin-top: 47rem;
+    margin-top: 1rem;
   }
 }
 /* #RESPONSIVE FOR 1200px */
@@ -29,6 +32,7 @@
   }
   /* header responsive */
   header {
+    display: inline-flexbox;
     position: fixed;
     top: 0;
     left: 0;
@@ -182,7 +186,7 @@
     right: 60px;
   }
   .movies-vid {
-    margin-top: 37rem;
+    margin-top: 1rem;
   }
 }
 
@@ -217,11 +221,11 @@
     margin-top: 35rem;
   }
   .movies {
-    margin-top: 7.5rem;
+    margin-top: 7rem;
   }
   .video-js {
     display: block;
-    margin-top: 130px;
+    margin-top: 100px;
     /* margin-left: 30px; */
   }
   /* filter bar responsive */
